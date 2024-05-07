@@ -7,7 +7,7 @@ const iceCreamCupRadio = document.getElementById("iceCreamCupRadio");
 const inputHotFudge= document.getElementById("inputHotFudge");
 
 
-window.onload = function() {
+window.onload = function () {
     iceCreamConeRadio.onclick = toggleToppingsRowVisability;
     iceCreamCupRadio.onclick = toggleToppingsRowVisability;
     
@@ -22,7 +22,7 @@ function toggleToppingsRowVisability(){
 
 
     if(shouldBeVisible){
-        // toppingsRow.style ="block";
+        // toppingsRow.style.display ="block";
         toggleToppingsRowVisibility.style.visibility ="visible";
     }
 
