@@ -23,12 +23,12 @@ function toggleToppingsRowVisability(){
 
     if(shouldBeVisible){
         // toppingsRow.style.display ="block";
-        toggleToppingsRowVisibility.style.visibility ="visible";
+        toggleToppingsRowVisibility.style.visibility = "visible";
     }
 
     else {
         // toppingsRow.style.display ="none";
-        toggleToppingsRowVisibility.style.visibility ="hidden";
+        toggleToppingsRowVisibility.style.visibility = "hidden";
     }
 };
 
