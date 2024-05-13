@@ -2,14 +2,18 @@
 
 // Input Elements 
 
-const iceCreamConeRadio = document.getElementById("iceCreamConeRadio");
-const iceCreamCupRadio = document.getElementById("iceCreamCupRadio");
-const inputHotFudge= document.getElementById("inputHotFudge");
+const iceCreamType1 = document.getElementById("iceCreamType1");
+const iceCreamType2 = document.getElementById("iceCreamType2");
+const inputHotFudge = document.getElementById("inputHotFudge");
+const inputSprinkles = document.getElementById("inputSprinkles");
+const inputWhippedCream = document.getElementById("inputWhippedCream");
+const inputCherry = document.getElementById("inputCherry");
+
 
 
 window.onload = function () {
-    iceCreamConeRadio.onclick = toggleToppingsRowVisability;
-    iceCreamCupRadio.onclick = toggleToppingsRowVisability;
+    iceCreamType1.onclick = toggleToppingsRowVisability;
+    iceCreamType2.onclick = toggleToppingsRowVisability;
     
 
 };
