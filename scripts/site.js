@@ -1,97 +1,37 @@
-"use strict"
 
-// Input Elements 
+// "use strict";
 
-const iceCreamType1 = document.getElementById("iceCreamType1");
-const iceCreamType2 = document.getElementById("iceCreamType2");
-const inputHotFudge = document.getElementById("inputHotFudge");
-const inputSprinkles = document.getElementById("inputSprinkles");
-const inputWhippedCream = document.getElementById("inputWhippedCream");
-const inputCherry = document.getElementById("inputCherry");
-
-
+ // Input Elements
+ const iceCreamType1 = document.getElementById("iceCreamCone");
+  const iceCreamType2 = document.getElementById("iceCreamCup");
+ const toppingsRow = document.getElementById("toppingsRow");
+const submitOrderButton = document.getElementById("submitOrderButton");
 
 window.onload = function () {
-    iceCreamType1.onclick = toggleToppingsRowVisability;
-    iceCreamType2.onclick = toggleToppingsRowVisability;
+    iceCreamCone.onclick = toggleToppingsRowVisibility;
+    iceCreamCup.onclick = toggleToppingsRowVisibility;
     
-
 };
 
-function toggleToppingsRowVisability(){
+
+// Function to toggle toppings row visibility
+function toggleToppingsRowVisibility() {
     console.log("toggle");
 
-    let shouldBeVisible = iceCreamCupRadio.checked;
+    let shouldBeVisible = iceCreamCup.checked; 
     console.log(shouldBeVisible);
 
-
-    if(shouldBeVisible){
-        // toppingsRow.style.display ="block";
-        toggleToppingsRowVisibility.style.visibility = "visible";
+    if (shouldBeVisible) {
+        toppingsRow.style.visibility = "visible";
+    } else {
+         toppingsRow.style.visibility = "hidden";
     }
-
-    else {
-        // toppingsRow.style.display ="none";
-        toggleToppingsRowVisibility.style.visibility = "hidden";
-    }
-};
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Output elements
-// const outBasePrice = document.getElementById("outputBasePrice");
-// const outputTax = document.getElementById("outputTax");
-// const outputTotalDue = document.getElementById("outputTotalDue");
-
-
-// window.onload = function(){
-//     submitOrderButton.onclick = submitOrderButtonClick;
-// };
-// function onEstimateTotalCostButton() {
-//     // get known values
-//     let numOfDays = Number
-
-
+submitOrderButton.addEventListener("click", function() {
+    
+ });
 
